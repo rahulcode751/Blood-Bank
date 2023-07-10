@@ -33,11 +33,16 @@ app.use(morgan('dev'));
 // app.get('/', (req, res) => {
 //     res.status(200).json({ message: "welcome to Blood Bank App" })
 // })
-app.use('/api/v1/test', require('./routes/testRoutes'))
-app.use('/api/v1/auth', require('./routes/authRoutes'))
-app.use('/api/v1/inventory', require('./routes/inventoryRoutes'))
-app.use('/api/v1/analytics', require('./routes/analyticsRoutes'))
-app.use('/api/v1/admin', require('./routes/adminRoutes'))
+// app.use('/api/v1/test', require('./routes/testRoutes'))
+// app.use('/api/v1/auth', require('./routes/authRoutes'))
+// app.use('/api/v1/inventory', require('./routes/inventoryRoutes'))
+// app.use('/api/v1/analytics', require('./routes/analyticsRoutes'))
+// app.use('/api/v1/admin', require('./routes/adminRoutes'))
+app.use('/test', require('./routes/testRoutes'))
+app.use('/auth', require('./routes/authRoutes'))
+app.use('/inventory', require('./routes/inventoryRoutes'))
+app.use('/analytics', require('./routes/analyticsRoutes'))
+app.use('/admin', require('./routes/adminRoutes'))
 
 // // STATIC FOLDER
 // app.use(express.static(path.join(__dirname, './client/build')));
